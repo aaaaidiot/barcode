@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else {
                 Toast.makeText(this, "Scanned: " + result.getContents(), Toast.LENGTH_LONG).show();
+                //読み取った値がresult.getContents()になる
                 textView.setText(result.getContents());
             }
         } else {
