@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         //横から縦向きに,ここからZxingの設定が行える
         // 詳細は→https://github.com/journeyapps/zxing-android-embedded
         integrator.setOrientationLocked(false);
+        //ZXingの下部に書かれた文字の変更
+        integrator.setPrompt("Some text");
         integrator.initiateScan();
     }
 
